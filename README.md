@@ -1,2 +1,2 @@
 # Notes
-# Questions & Solutions Related for development
+# Questions & Solutions Related to development
