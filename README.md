@@ -1,11 +1,13 @@
 # Notes
 # Questions & Solutions Related to development
-Engineered a high-throughput Apache Beam (Java) pipeline on GCP DataFlow using ParDo fusion, custom Coders, pipeline parallelism, and windowing strategies, enabling deterministic schema validation and low-latency ingestion from Oracle SQL into GCS buckets.
+Designed and developed RESTful, MVC-driven microservices using Spring Boot, JPA, DTO/DAO layers, and Kafka event streams to consolidate CRM data into a centralized repository, delivering a 40% improvement in data processing throughput.
 
-Tuned Autoscaling, optimized I/O backpressure, and enhanced DoFn lifecycle management with retry logic, exponential backoff, and dead-letter handling for corrupt/invalid records—achieving ~60% latency reduction and 50% improvement in heap utilization.
+Enhanced API architecture with API versioning, pagination, centralized exception handling, and multithreaded processing using ExecutorService and CompletableFuture, improving API performance and reducing latency by ~25%.
 
-Developed a second BigQuery-native ETL framework using partitioned & clustered tables, materialized views, analytical SQL (OVER, QUALIFY, ARRAY) orchestrated via Python DAGs, with fault-tolerant execution and error-replay capabilities for transient query failures.
+Automated reconciliation and high-volume record processing via dynamic job scheduling (Quartz/Spring Scheduler) with retry logic, fault-tolerant workflows, and RBAC, reducing manual intervention by ~60%.
 
-Both approaches processed 5M+ records sub-5 minutes using predicate pushdown, parallel read APIs, and optimized execution plans, reducing compute cost by ~30% and meeting strict pipeline SLAs.
+Integrated Oracle SODA to provide NoSQL-like document handling within a relational setup, enabling flexible schema management and simplified semi-structured data operations.
 
-Authored HLD/LLD designs, implemented IntegrationTest suites, performed EXPLAIN-stage debugging, resolved schema drift issues, and ensured idempotent + exception-safe deployments through rigorous peer reviews.
+Improved observability and system reliability using ELK, Grafana, structured logging, and performance dashboards, resulting in ~30% reduction in system downtime.
+
+Executed Integration Tests using JUnit5, Mockito, and API contract testing with Swagger/Postman; managed CI/CD deployments using Jenkins and Kubernetes, ensuring high-quality, production-ready releases.
