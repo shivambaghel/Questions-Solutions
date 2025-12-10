@@ -1,13 +1,13 @@
 # Notes
 # Questions & Solutions Related to development
-Designed and developed RESTful, MVC-driven microservices using Spring Boot, JPA, DTO/DAO layers, and Kafka event streams to consolidate CRM data into a centralized repository, delivering a 40% improvement in data processing throughput.
+Engineered high-throughput ETL pipelines using Apache Beam (Java) on GCP DataFlow with ParDo fusion, custom Coders, pipeline parallelism, and windowing strategies to validate and ingest large-scale SQL data into GCS buckets.
 
-Enhanced API architecture with API versioning, pagination, centralized exception handling, and multithreaded processing using ExecutorService and CompletableFuture, improving API performance and reducing latency by ~25%.
+Optimized pipeline performance through Autoscaling tuning, I/O backpressure control, and multi-threaded batch execution, achieving ~60% reduction in processing latency and 50% improvement in memory utilization.
 
-Automated reconciliation and high-volume record processing via dynamic job scheduling (Quartz/Spring Scheduler) with retry logic, fault-tolerant workflows, and RBAC, reducing manual intervention by ~60%.
+Developed an independent BigQuery-native ETL framework using partitioned & clustered tables, materialized views, analytical SQL (OVER, QUALIFY, ARRAY), and Python DAG orchestration, enabling scalable transform-and-load workflows.
 
-Integrated Oracle SODA to provide NoSQL-like document handling within a relational setup, enabling flexible schema management and simplified semi-structured data operations.
+Built fault-tolerant data processing logic using retry policies, exponential backoff, dead-letter queues, and schema validation checkpoints, ensuring consistent and exception-safe processing for large datasets.
 
-Improved observability and system reliability using ELK, Grafana, structured logging, and performance dashboards, resulting in ~30% reduction in system downtime.
+Achieved sub-5-minute processing of 5M+ records across Beam and BigQuery pipelines using predicate pushdown, parallel read APIs, and execution-plan optimization, reducing compute cost by ~30% and meeting strict SLAs.
 
-Executed Integration Tests using JUnit5, Mockito, and API contract testing with Swagger/Postman; managed CI/CD deployments using Jenkins and Kubernetes, ensuring high-quality, production-ready releases.
+Delivered HLD & LLD designs, executed Integration Tests, performed BigQuery EXPLAIN-stage analysis, resolved schema-drift issues, and ensured idempotent, production-ready deployments through rigorous peer code reviews.
